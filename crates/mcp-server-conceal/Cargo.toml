@@ -19,3 +19,4 @@ anyhow = { workspace = true }
 tracing = { workspace = true }
 tracing-subscriber = { workspace = true }
 shell-words = { workspace = true }
+openssl-sys = { workspace = true } 
