@@ -1,0 +1,32 @@
+[package]
+name = "mcp-server-conceal-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+repository.workspace = true
+
+
+[dependencies]
+tokio = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+rmcp = { workspace = true }
+shell-words = { workspace = true }
+fake = { workspace = true }
+regex = { workspace = true }
+rusqlite = { workspace = true }
+uuid = { workspace = true }
+toml = { workspace = true }
+rand = { workspace = true }
+reqwest = { workspace = true }
+directories = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }
+tempfile = { workspace = true }

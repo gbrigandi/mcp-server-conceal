@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "crates/mcp-server-conceal",
+    "crates/mcp-server-conceal-core",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+authors = ["Gianluca Brigandi <gbrigand@gmail.com>"]
+description = "An MCP proxy that pseudo-anonymizes PII before data reaches external AI providers like Claude, ChatGPT, or Gemini"
+version = "0.1.0"
+license = "MIT"
+repository = "https://github.com/gbrigandi/mcp-server-conceal"
+
+[workspace.dependencies]
+tokio = { version = "1.40", features = ["full"] }
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+rmcp = { version = "0.3.0", features = ["server"] }
+shell-words = "1.1"
+fake = { version = "2.9", features = ["derive"] }
+regex = "1.10"
+rusqlite = { version = "0.31", features = ["bundled"] }
+uuid = { version = "1.8", features = ["v4"] }
+toml = "0.8"
+rand = "0.8"
+reqwest = { version = "0.11", features = ["json"] }
+directories = "5.0"
+
+tokio-test = "0.4"
+tempfile = "3.8"

@@ -1,0 +1,21 @@
+[package]
+name = "mcp-server-conceal"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "mcp-server-conceal"
+path = "src/main.rs"
+
+[dependencies]
+mcp-server-conceal-core = { path = "../mcp-server-conceal-core" }
+tokio = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+shell-words = { workspace = true }
